@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MasterService } from 'src/app/services/master.service';
+import { Category } from 'src/app/model/Category';
 
 @Component({
   selector: 'app-category',
@@ -8,7 +9,8 @@ import { MasterService } from 'src/app/services/master.service';
 })
 export class CategoryComponent implements OnInit {
 
-  categoryList: any[] = [];
+  categoryList: Category[] = [];
+  category: Category = new Category
   constructor(private masterService: MasterService){
     
   }
@@ -17,8 +19,8 @@ export class CategoryComponent implements OnInit {
     this.loadAllFoodCategory();
   }
 
-  loadAllFoodCategory(){
-    this.masterService.getAllFoodCategory().subscribe((res: any) => {
+  loadAllFoodCategory() {
+    this.masterService.getAllFoodCategory().subscribe((res: Category[]) => {
       this.categoryList = res;
     });
   }
