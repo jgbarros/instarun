@@ -1,0 +1,59 @@
+<div id="idCategory card">
+<div class="card text-center">
+    <div class="card-header text-bg-primary align-bottom">
+        <h2 class="card-title">COMBOS SORTIDOS (SABORES JÁ SELECIONADOS)</h2>
+    </div>
+    <div class="card-body">
+        <img src="assets/image_top.jpg" class="card-img" alt="...">
+    </div>
+    <div class="card-footer">
+        <div class="alert alert-secondary mb-0" role="alert">
+            Aqui e para vc que quer mais opções em 140 salgadinhos ou 210 salgadinhos podendo escolher ate 6 sabores para 210 salgadinhos
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="col mt-3" *ngFor="let category of categoryList">
+    <section id="idCategory{{ category.categoryId }}">
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{ category.photoUrl }}" class="img-fluid rounded-start ms-3" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                        <span class="badge text-bg-primary me-3">Novidade!</span>
+                        <span class="badge text-bg-warning me-3">Promoção!</span>
+
+                        <h5 class="card-title">COMBO de 1KG de Maminha na Brasa com ACOMPANHAMENTO</h5>
+                        <p class="card-text">600g de Maminha na Brasa. Acompanha Arroz Biro Biro, Farofa de Bacon e Mandioca cozida.</p>
+                          <div class="d-inline p-2 text-danger"><s>R$ 120,00</s></div>
+                          <div class="d-inline p-2 text-bold">R$ 98,00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4 pt-3">
+          <img src="{{ category.photoUrl }}" class="card-img ms-3" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <span class="badge text-bg-primary me-3">Novidade!</span>
+            <span class="badge text-bg-warning me-3">Promoção!</span>
+
+            <h5 class="card-title">COMBO de 1KG de Maminha na Brasa com ACOMPANHAMENTO</h5>
+            <p class="card-text">600g de Maminha na Brasa. Acompanha Arroz Biro Biro, Farofa de Bacon e Mandioca cozida.</p>
+              <div class="d-inline p-2 text-danger"><s>R$ 120,00</s></div>
+              <div class="d-inline p-2 text-bold">R$ 98,00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
