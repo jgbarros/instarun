@@ -16,6 +16,15 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+  margin: 0;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
 .section__container {
   max-width: var(--max-width);
   margin: auto;

@@ -16,7 +16,7 @@ const routes: Routes = [
     path: 'foodCategory', component: CategoryComponent
   },
   { 
-    path: 'restaurant-items', component: RestaurantItemsComponent
+    path: 'restaurant-items/:categoryName', component: RestaurantItemsComponent
   },
   { 
     path: 'create-order', component: CreateOrderComponent

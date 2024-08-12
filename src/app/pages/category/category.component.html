@@ -14,7 +14,7 @@
   </div>
 </div>
 
-<div class="col mt-3" *ngFor="let category of categoryList">
+<div class="col mt-3" *ngFor="let category of categoryList" (click)="navigate(category.categoryId)">
     <section id="idCategory{{ category.categoryId }}">
 
     <div class="card mb-3" style="max-width: 540px;">

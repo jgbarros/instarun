@@ -13,4 +13,8 @@ export class MasterService {
   getAllFoodCategory(): Observable<Category[]> {
     return this.http.get<Category[]>('http://localhost:3000/category');
   }
+
+  getItemsByResurantCategoryId(id: number) {
+    return this.http.get('http://localhost:3000/itemCategory?id=' + id);
+  }
 }
